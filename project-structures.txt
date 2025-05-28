@@ -1,0 +1,25 @@
+
+## Project structure
+chronosense/
+├── app/
+│   ├── __init__.py
+│   ├── gradio_ui.py             # Gradio web interface
+│   ├── logic.py                 # Sleep recommendation logic
+│   ├── audio_preprocessing.py  # Feature extraction (MFCCs etc.)
+│   └── model_predict.py        # Load + run ML models on audio/logs
+│
+├── models/
+│   ├── sleep_quality_model.pkl  # Trained scikit-learn model
+│   └── audio_classifier.pth     # Trained PyTorch audio classifier
+│
+├── data/
+│   ├── user_logs.csv            # Logged user metadata (caffeine, sleep time etc.)
+│   └── audio_samples/           # Uploaded or test audio files
+│
+├── notebooks/
+│   ├── eda_audio.ipynb          # Spectrogram/MFCC visualization
+│   └── model_training.ipynb     # ML training (scikit-learn + PyTorch)
+│
+├── requirements.txt
+├── README.md
+└── run_app.py                   # Entry point to launch Gradio
