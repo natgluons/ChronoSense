@@ -16,9 +16,10 @@ chronosense/
 │   ├── user_logs.csv            # Logged user metadata (caffeine, sleep time etc.)
 │   └── audio_samples/           # Uploaded or test audio files
 │
-├── notebooks/
-│   ├── eda_audio.ipynb          # Spectrogram/MFCC visualization
-│   └── model_training.ipynb     # ML training (scikit-learn + PyTorch)
+├── model_training/
+│   ├── eda_audio.py             # Spectrogram/MFCC visualization
+│   ├── model_predict.py        # ML training (scikit-learn)
+|   └── train_pytorch.py        # ML training (PyTorch)
 │
 ├── requirements.txt
 ├── README.md
